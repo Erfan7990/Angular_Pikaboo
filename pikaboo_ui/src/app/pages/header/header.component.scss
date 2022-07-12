@@ -1,0 +1,182 @@
+.toolbar nav {
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 100px;
+}
+
+.toolbar nav .logo {
+    width: auto;
+    height: 80px;
+    margin-right: 10px;
+}
+
+.toolbar nav .logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.toolbar nav .search-container form {
+    width: 600px;
+    height: 35px;
+    border: 1px solid #a7a7a7;
+    border-radius: 3px;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+}
+
+form input {
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 100%;
+    margin-right: 5px;
+    font-size: 15px;
+    color: #535353;
+    background-color: transparent;
+}
+
+form fa-icon {
+    color: #a7a7a7;
+    cursor: pointer;
+}
+
+.add_to_card_btn fa-icon {
+    color: #11A0DB;
+    margin-right: 10px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.add_to_card_btn button {
+    background-color: rgb(216, 216, 216)
+}
+
+.login_register_btn {
+    margin-left: 30px;
+}
+
+.login_register_btn .login_btn,
+.login_register_btn .register_btn {
+    margin-right: 10px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 15px;
+    color: #000;
+    cursor: pointer;
+}
+
+.login_register_btn .login_btn:hover,
+.login_register_btn .register_btn:hover {
+    color: #11A0DB;
+}
+
+.main_nav nav {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 10px 100px;
+    background-color: #11A0DB
+}
+
+.dropbtn {
+    padding: 16.5px 40px;
+    border: none;
+    background-color: transparent;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #fff;
+    cursor: pointer;
+}
+
+.smartphones_dropdown,
+.electronics_dropdown,
+.mobile_dropdown,
+.computer_dropdown,
+.lifestyle_dropdown {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.smartphones_dropdown:hover .dropbtn,
+.electronics_dropdown:hover .dropbtn,
+.mobile_dropdown:hover .dropbtn,
+.computer_dropdown:hover .dropbtn,
+.lifestyle_dropdown:hover .dropbtn {
+    color: #11A0DB;
+    background-color: #fff;
+}
+
+.smartphones_dropdown_content {
+    min-width: 160px;
+    padding: 10px 15px;
+}
+
+.lifestyle_dropdown_content {
+    min-width: 200px;
+    padding: 10px 15px;
+}
+
+.electronics_dropdown_content,
+.mobile_dropdown_content,
+.computer_dropdown_content {
+    min-width: 400px;
+    padding: 10px 15px;
+}
+
+// .smartphones_dropdown_content,
+// .electronics_dropdown_content,
+// .mobile_dropdown_content,
+// .computer_dropdown_content,
+//
+.content {
+    display: none;
+    top: 49.5px;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 2px 4px 2px rgba(0, 0, 0, 0.2);
+    z-index: 99999;
+}
+
+.electronics_row,
+.mobile_row,
+.computer_row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.smartphones_dropdown_content a,
+.electronics_dropdown_content a,
+.mobile_dropdown_content a,
+.computer_dropdown_content a,
+.lifestyle_dropdown_content a {
+    display: block;
+    color: black;
+    padding: 10px 16px;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.smartphones_dropdown_content a:hover,
+.electronics_dropdown_content a:hover,
+.mobile_dropdown_content a:hover,
+.computer_dropdown_content a:hover,
+.lifestyle_dropdown_content a:hover {
+    background-color: #f1f1f1;
+    color: #11A0DB;
+}
+
+.smartphones_dropdown:hover .smartphones_dropdown_content,
+.electronics_dropdown:hover .electronics_dropdown_content,
+.mobile_dropdown:hover .mobile_dropdown_content,
+.computer_dropdown:hover .computer_dropdown_content,
+.lifestyle_dropdown:hover .lifestyle_dropdown_content {
+    display: block;
+}

@@ -1,0 +1,19 @@
+<div class="product_card_container">
+
+    <div class="card_header">
+        <h1>Today's Special</h1>
+    </div>
+    <div class="card_box">
+        <div class="card_body" *ngFor="let product of products" [routerLink]="['/', 'product-details', product.id]">
+            <div class="card_img">
+                <img src="{{product.imgSrc}}" alt="">
+            </div>
+            <div class="card_title">{{product.ProductName}}</div>
+            <div class="card_price">
+                <span class="discount_price">৳{{product.Discount_Price}} </span>
+                <span class="regular_price">৳{{product.Regular_price}} </span>
+            </div>
+        </div>
+    </div>
+
+</div>

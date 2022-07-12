@@ -1,0 +1,50 @@
+<app-header></app-header>
+<div class="product_details_container">
+    <div class="product_details_col_1">
+        <div class="product_details_img" *ngIf="product">
+            <img src="{{product.imgSrc}}" alt="">
+        </div>
+    </div>
+    <div class="product_details_col_2">
+        <div class="product_title">
+            <h1>{{product.ProductName}}</h1>
+        </div>
+        <div class="product_brand">Brand:
+            <span>xyz</span>
+        </div>
+        <div class="product_sold">Sold By: XYZ BD</div>
+        <div class="product_offer_img">
+            <img src="../../../assets/images/offers_img/bkash-10-30-04-2022.jpg" alt="">
+        </div>
+        <div class="product_price">
+            <span class="offer_price">৳{{product.Discount_Price}}</span>
+            <span class="regular_price">৳{{product.Regular_price}}</span>
+
+        </div>
+        <div class="product_points">Earn 34 Club Points</div>
+
+        <div class="product_warranty">Warranty: <span>7 Days warranty (Please preserve your box to claim warranty)</span></div>
+        <div class="product_color">
+            <p>Color</p>
+            <div>
+                <div class="color_img_1"> <img src="{{product.imgSrc}}" alt=""></div>
+                <div class="color_img_2"> <img src="{{product.imgSrc}}" alt=""></div>
+            </div>
+        </div>
+        <div class="product_quantity">
+            <button (click)="minus()">-</button>
+            <input type="text" value="1">
+            <button (click)="plus()">+</button>
+        </div>
+        <div class="product_btn">
+            <button class="add-to-cards">add to card</button>
+            <button class="buyNow">buy now</button>
+        </div>
+    </div>
+</div>
+<mat-tab-group animationDuration="0.3ms">
+    <mat-tab label="First">Content 1</mat-tab>
+    <mat-tab label="Second">Content 2</mat-tab>
+    <mat-tab label="Third">Content 3</mat-tab>
+</mat-tab-group>
+<app-footer></app-footer>

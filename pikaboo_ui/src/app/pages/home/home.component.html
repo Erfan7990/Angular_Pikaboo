@@ -1,0 +1,27 @@
+<section id="home_section">
+    <!-- croulse design -->
+    <div class="carousel">
+        <!-- <div *ngIf="images && images.length > 0" class="carousel-container">
+      <img *ngFor="let image of images; let i=index" [src]="image.imageSrc" [alt]="image.imageArt" [ngClass]="{'image-active': selectedIndex === i}">
+  </div> -->
+
+        <swiper class="swiper" [slidesPerView]="1" [spaceBetween]="50" (swiper)="onSwiper($event)" (slideChange)="onSlideChange()" [navigation]="true" [pagination]="{ clickable: true }" [scrollbar]="{ draggable: true }">
+            <ng-template swiperSlide *ngFor="let image of images" class="slide_imgs">
+                <img src="{{image.imageSrc}}" alt="{{image.imageArt}}">
+            </ng-template>
+        </swiper>
+    </div>
+
+    <!-- creating Banner -->
+    <div id="banner_container" *ngFor="let banner of banners">
+        <div class="banner_img">
+            <img src="{{banner.banner_img_src}}" alt="{{banner.banner_img_art}}">
+            <div class="img_hover"></div>
+        </div>
+        <!-- creating Card items -->
+        <app-product-cards></app-product-cards>
+    </div>
+
+
+
+</section>
